@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Memories | @nurinalis</title>
+        <style>
+            *{
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+         }
+         
+         .heading{
+            font-family: 'Poppins', sans-serif; 
+            font-size: 2rem; 
+            font-weight: bold;
+            color: #ff85b0; 
+            text-align: center; 
+            margin: 20px 0; 
+            padding: 10px; 
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            letter-spacing: 1px; 
+            text-transform: uppercase; 
+         }
+         
+         .heading:hover {
+            color: #ffffff; 
+            background: #ff85b0; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+         }
+         
+         body {
+            background: linear-gradient(45deg, pink, teal);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;;
+            font-family: 'Poppins', sans-serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+         }   
+         
+         /* Memories Kundasang */
+         .main {
+            max-width: 1000px;
+            margin: auto;
+         }    
+         h1 {
+            font-size: 50px;
+            word-break: break-all;
+         }
+         
+         .row {
+            margin: 8px -16px;
+         }
+         
+         /* Add padding between each column */
+         .row,
+         .row > .column {
+            padding: 8px;
+         }
+         
+         
+         .column {
+            float: left;
+            width: 25%;
+         }
+         
+         
+         .row:after {
+            content: "";
+            display: table;
+            clear: both;
+         }
+         
+         .content {
+            background-color: white;
+            padding: 10px;
+         }
+         
+         
+         @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+             }
+         }
+         
+         
+         @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+         }
+         
+         /* Semporna Trip*/
+         div.column2 {
+            float: left;
+            width: 20%;
+            padding: 25px;
+            margin-left: 10%;
+            flex: 1; 
+            max-width: 300px; 
+            margin: 10px; 
+            transition: transform 0.3s; 
+         }
+         
+         div.column2 img {
+            width: 100%; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+         }
+         
+         div.row2{
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+            margin: 20px 0; 
+         }
+         
+         div.row2::after {
+            content: "";
+            clear: both;
+            display: table;
+         }
+         
+         img {
+            float: right;
+            border: 1px dotted black;
+            margin: 0px 0px 15px 20px;
+         }
+         
+         .h2 {
+            text-decoration-color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-top: 40px;
+         }
+         
+         .h4 {
+            text-align: justify; 
+            padding: 15px 20px; 
+            background-color: #ffffff;
+            font-family: 'Poppins', sans-serif; 
+            font-size: 1.1em; 
+            line-height: 1.6;
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            margin: 20px 0;
+            transition: all 0.3s ease; 
+         }
+         
+         .h4:hover {
+            background-color: #f9f9f9; 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); 
+            transform: translateY(-2px); 
+         }
+         
+         div.image-container {
+            float: left;
+            margin-right: 10px;
+         }
+         
+         div.content {
+            overflow: auto; 
+            }
+         
+         div.image-container2{
+            float: right;
+            margin-left: 20px;
+         }
+         
+         .container3 {
+            position: relative;
+            font-family: Arial;
+         }
+         
+         .text-block {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: black;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+         }
+         
+         /*Top Button*/
+         #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+         }
+         
+         #myBtn:hover {
+            background-color: #555;
+         }
+         
+            
+        </style>
+    </head>
+    <body>
+    
+    <h1 class="heading">Trip to Kundasang & Semporna, Sabah</h1>
+
+    <!-- MAIN (Center website) -->
+<div class="main">
+
+    <hr>
+    
+    <h2 style="color: white;">KUNDASANG 2021</h2>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="images/sabah1.jpg" alt="Sabah1" style="width:100%">
+          <h3>Picture 1</h3>
+          <p>Street Art Scene</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="images/sabah2.jpg" alt="Sabah2" style="width:100%">
+          <h3>Picture 2</h3>
+          <p>With ice-cream truck</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="images/sabah3.jpg" alt="Sabah3" style="width:100%">
+          <h3>Picture 3</h3>
+          <p>Nature's Embrace</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+        <img src="images/sabah4.jpg" alt="Sabah4" style="width:100%">
+          <h3>Picture 4</h3>
+          <p>Harbor Serenity</p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+    
+    <div class="content">
+      <img src="images/sabah5.jpg" alt="Sabah5" style="width:100%">
+      <h3>Picture 5</h3>
+      <p>The image captured is a scenic photogenic view of Kundasang, Sabah with mountains capture majestically under half cloudy sky. 
+        In the foreground, there are appreciable distinguishing structure with red roofs well relief against the green background.</p>
+        <p>The mountains in the background give a touch of pixie dust to the painting because they seem blurred at certain points like they are covered with mist. 
+        Spectators are seen walking around which are characteristic of this continually calm and serene part of the city.</p>
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+
+    <br>
+    <br>
+
+    <hr size="5" color="pink" width="100%">
+
+    <div class="row2">
+        <div class="column2">
+          <img src="images/pulaumabul.png" alt="Pulau mabul" style="width:400">
+        </div>
+        <div class="column2">
+            <img src="images/pulaumabul2.png" alt="Pulau mabul 2" style="width:400">
+          </div>
+        <div class="column2">
+          <img src="images/pulaumabul3.png" alt="Pulau mabul 3" style="width:400">
+        </div>
+    </div>
+
+
+    <hr size="5" color="pink" width="100%">
+
+    <br>
+
+    <div class="h2">
+        <h2>SEMPORNA, SABAH!</h2>
+    </div>
+
+    <br>
+
+    <br>
+
+    <div class="content2">
+        <h4>
+            <div class="image-container">
+                <img src="images/tawau-apt.jpg" height="200" alt="Tawau Airport">
+            </div>
+        </h4>
+        
+        <br>
+
+        <h2>Landed On Tawau Airport</h2>
+        
+        <br>
+
+        <h4 style="color: white;">When I landed at Tawau Airport, the atmosphere was buzzing with excitement. After stepping off the plane, I felt the warm tropical air enveloping me. 
+            The airport had a laid-back vibe, typical of smaller regional airports, with friendly staff and a few local shops.
+            As I waited for the car rental owner, I took in the surroundings, observing other travelers and the unique decor that hinted at the beauty of Sabah. 
+            Once me and my family met up with the car rental owner, the drive to Semporna was filled with anticipation. 
+            The scenic route offered glimpses of lush greenery and maybe even some local villages, adding to the adventure before reaching my hotel.
+        </h4>
+
+        <br>
+
+        <h4>
+            <div class="image-container2">
+                <img src="images/hotel.jpg" height="200" alt="Hotel">
+            </div>
+        </h4>
+
+        <br>
+        <br>
+
+        <p style="color: #f9f9f9; font-weight: bold; text-align: justify;">Furthermore, we arrived at MD Mutiara Hotel, I was warmly greeted by the friendly staff, who welcomed me with genuine smiles that instantly made me feel at home. 
+            The hotel exuded a cozy and inviting atmosphere, beautifully complemented by its modern design that blended comfort with style. 
+            After settling in and taking a moment to appreciate my surroundings, I made my way to the restaurant, Cfu' Tomyam Seafood Semporna, 
+            where I was excited to indulge in some delicious local cuisine, eager to experience the flavors of the region and enjoy a delightful meal.
+        </p>
+    </div>
+
+        <br>
+
+        <h2>Semporna's Beach</h2>
+
+        <br>
+
+        <div class="container3">
+            <p style="text-align: center;">Click image to enlarge it!</p>
+            <a target="_blank" href="images/beach4.png">
+                <img src="images/beach4.png" alt="beach4" style="width:100%">
+              </a>
+            <div class="text-block">
+              <h4>Nature</h4>
+              <p>Sabah's Beach</p>
+            </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+     
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+        
+        
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+        
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+        
+            // When the user clicks on the button, scroll to the top of the document
+        
+            function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+        
+        </script>
+        
+
+    </body>
+
+</html>
