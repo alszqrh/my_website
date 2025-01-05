@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+/*Welcome Page*/
+  @import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(images/bgd.jpg);
+    background-size: auto;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+  
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.menu a:hover{
+   border: 1px solid indianred;
+   background: transparent;
+}
+.About-Me a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: indianred;
+}
+.About-Me a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+}
+.h-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 650px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.h-text span{
+    letter-spacing: 5px;
+}
+.h-text h1{
+    font-size: 3.5em;
+}
+.h-text a{
+    text-decoration: none;
+    background: indianred;
+    padding: 10px 20px;
+    color: #fff;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.h-text a:hover{
+    border: 1px solid indianred;
+    background: transparent;
+}
+
+/*Index Page*/
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Nunito", sans-serif;
+}
+
+.wrapper{
+   width: 100;
+   min-height: 100vh;
+   background-image: linear-gradient(rgb(247, 115, 170),rgb(236, 171, 171));
+   border-radius: 20px;
+}
+
+.wrapper .container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 50%;
+   margin: auto;
+}
+
+.container .image{
+   margin-top: 60px;
+}
+
+.container .image img{
+   height: 250px;
+   width: 250px;
+   border: 5px solid #fff;
+   border-radius: 50%;
+}
+
+.container .website{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   flex-direction: column;
+   margin: 30px 0px;
+}
+
+.container .website h2{
+   color: #eeeeee;
+   font-size: 100%;
+   font-weight: 300;
+}
+
+.container .website span{
+   color: #222;
+   font-size: 100%;
+   font-weight: 500;
+}
+
+.container .website p{
+   font-size: 100%;
+   color: #eeeeee;
+   margin: 10px 0px;
+   line-height: 1.5;
+   text-align: justify;
+}
+
+.container .website a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 15px;
+   padding: 10px 16px;
+   background-color: rgb(181, 137, 223);
+   letter-spacing: 1.5px;
+   margin-top: 10px;
+}
+
+.container .website a:hover{
+   background-color: #7a7a7a;
+   transition: 0.5s ease;
+}
+
+/*MOVIE TABLE*/
+* {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+}
+
+.heading{
+   font-family: 'Poppins', sans-serif;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 2rem 9%;
+   background: #914b86;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 70;
+   font-weight: bold
+}
+
+.filter{
+
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   opacity: .7;
+
+   background: rgb(238,174,202);
+background: -moz-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#94bbe9",GradientType=1);
+}
+
+table {
+
+   margin-top: 1000px; 
+   font-size: 100%;
+   position: absolute;
+   z-index: 2;
+   left:50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   border-collapse: collapse;
+   border-spacing: 0;
+   border-radius: 12px 12px 0 0;
+   overflow: hidden;
+   box-shadow: 0 2px 12px rgba(32,32,32,.3);
+   background: #fafafa;
+   text-align: center;
+   width: 1100px;
+}
+
+th,td {
+   padding: 13px 20px;
+
+}
+
+th {
+   background: #914b86;
+   color: #fafafa;
+   text-transform: uppercase;
+   font-family: 'Roboto', sans-serif;
+}
+
+td {
+   font-family: 'Open Sans'sans-serif;
+}
+
+tr:nth-child(odd) {
+   background-color: #eeeeee;
+}
+
+/* Styling ordered list of Movie (OL) */
+ol {
+   list-style-type: upper-alpha; 
+   background-color: #F4C2C2; 
+   padding: 40px; 
+   border-radius: 10px; 
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   font-family: Arial, sans-serif; 
+   margin: 20px;
+}
+
+ol li {
+   background-color: #914b86; 
+   color: #eeeeee; 
+   margin-bottom: 20px; 
+   padding: 10px 15px;
+   border-radius: 5px; 
+   font-size: 100%; 
+   transition: transform 0.3s, background-color 0.3s; 
+}
+
+ol li:hover {
+   background-color: #A766A8;
+   transform: scale(1.05); 
+}
+
+/* Styling unordered list (UL) */
+ul {
+   list-style-type: disc; 
+   background-color: #F4C2C2; 
+   padding: 40px; 
+   border-radius: 10px; 
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   font-family: Arial, sans-serif; 
+   margin: 20px;
+}
+
+ul li {
+   background-color: palevioletred; 
+   margin-bottom: 15px; 
+   padding: 10px 15px; 
+   border-radius: 5px; 
+   font-size: 100%; 
+   transition: transform 0.3s, background-color 0.3s; 
+}
+
+ul li:hover {
+   background-color: #E07B8A; 
+   transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/*Airlines Travel */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #914b86;
+}
+
+.heading {
+   font-family: 'Poppins', sans-serif; 
+   font-size: 2.5rem; 
+   font-weight: bold;
+   color: #ff85b0; 
+   text-align: center;
+   margin: 20px 0; 
+   padding: 10px; 
+   background: rgba(255, 255, 255, 0.8); 
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+   letter-spacing: 1px; 
+   text-transform: uppercase; 
+}
+
+.heading:hover {
+    color: #ffffff; 
+    background: #ff85b0; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wrapper {
+   margin: 150px auto;
+   width: 70%;
+}
+
+img {
+   max-width: 320px;
+   float: left;
+   border: 3px solid #fff;
+   border-radius: 10px;
+   margin-right: 15px;
+}
+
+.text-box {
+   color:#eeeeee;
+}
+
+.text-box h2{
+   font-size: 200%;
+}
+
+.text-box p {
+   font-size: 90%;
+}
+
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 30px; /* Add space below the section */
+}
+
+
+.image-box {
+   text-align: center; 
+}
+
+.main-image {
+   max-width: 100%; /* Make the image responsive */
+   height: auto; 
+   margin-bottom: 20px; /* Space below the image */
+}
+
+.text-box {
+   width: 90%; 
+   max-width: 800px; 
+   margin: auto;
+   text-align: justify; 
+   font-size: 1.1rem; 
+   line-height: 1.8; 
+}
+
+.visited-section {
+   text-align: left;
+   padding: 20px;
+}
+
+.visited-section h2 {
+   margin-bottom: 10px;
+}
+
+.visited-section ul {
+   padding-left: 100px; 
+   list-style-type: disc;
+}
+
+/* Benefits section styling */
+.benefits-section {
+   padding: 20px;
+   text-align: left;
+}
+
+.benefits-section h2 {
+   font-size: 2rem;
+   margin-bottom: 10px;
+}
+
+.benefits-section ul {
+   padding-left: 20px;
+   list-style-type: disc;
+}
+
+/* General list item styling */
+ul li {
+   font-size: 1.2rem; 
+   margin-bottom: 10px; 
+}
+
+/* Video of Alis's Car PLaylist */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* Added for better box model */
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .video-title {
+   font-family: 'Poppins', sans-serif; 
+   font-size: 2.5rem; 
+   font-weight: bold;
+   color: #ff85b0; 
+   text-align: center; 
+   margin: 20px 0; 
+   padding: 10px; 
+   background: rgba(255, 255, 255, 0.8); 
+   border-radius: 10px; 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+   letter-spacing: 1px; 
+   text-transform: uppercase; 
+}
+
+/* Adding a hover effect */
+.video-title:hover {
+   color: #ffffff; 
+   background: #ff85b0; 
+   cursor: pointer; 
+   transition: background-color 0.3s ease, color 0.3s ease; 
+}
+ 
+ /* Body styles */
+ body {
+   background: #A766A8;
+   display: flex;
+   justify-content: center; 
+ }
+ 
+ /* Heading styles */
+ .heading {
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   color: #ff85b0; 
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   text-align: justify;
+   margin: auto; 
+   padding: 10px;
+ }
+ 
+ /* Container styles */
+ .container {
+   position: relative;
+   width: 1100px;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 30px;
+   margin: 8% auto; /* Combined margin auto for centering */
+ }
+ 
+ /* Video list styles */
+ .container .video-list {
+   border-radius: 5px;
+   height: 1100px;
+   overflow-y: scroll; 
+   background-image: url(images/mac\ wallpaper.jpg); 
+   margin: 30px 10px;
+   padding: 20px 15px;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0.5px 10px;
+   transition: 0.3s ease-in-out;
+ }
+ 
+ /* Video item styles */
+ .container .video-list .vid {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+   background: #eee;
+   border-radius: 5px;
+   margin: 10px;
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+ }
+ 
+ /* Video dimensions */
+ .container .video-list .vid video {
+   max-width: 100%;
+   border-radius: 10px;
+ }
+ 
+ /* Adjustments on hover */
+ .vid:hover {
+   background: #A766A8;
+ }
+ 
+ .vid:hover video {
+   transform: scale(1.1);
+ }
+ 
+ /* Active video styles */
+ .container .video-list .vid.active {
+   background: #eee;
+ }
+ 
+ .container .video-list .vid.active .title {
+   color: #fff; /* White color for active title */
+ }
+ 
+ .container .video-list .vid .title {
+   color: #333;
+   font-size: 17px;
+   text-align: center;
+ }
+ 
+ /* Video container style */
+ .video {
+   width: 40%;
+   margin-bottom: 5px;
+   height: auto;
+   position: relative;
+ }
+ 
+ /* Scrollbar styles */
+ .container .video-list::-webkit-scrollbar {
+   width: 7px;
+ }
+ 
+ .container .video-list::-webkit-scrollbar-track {
+   background: #ccc;
+   border-radius: 10px;
+ }
+ 
+ .container .video-list::-webkit-scrollbar-thumb {
+   background: #666;
+   border-radius: 50px;
+ }
+ 
+ /* Media Queries */
+ @media (max-width: 3000px) {
+   .container {
+     padding: 5px 5%;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   .container {
+     grid-template-columns: 1fr; /* Change to single column on small screens */
+   }
+ }
+
+ /*Maps Malaysia*/
+
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+  
+ .maps-title {
+   font-family: 'Poppins', sans-serif; 
+   font-size: 2.5rem; 
+   font-weight: bold; 
+   color: #ff85b0; 
+   text-align: center; 
+   margin: 20px 0; 
+   padding: 10px; 
+   background: rgba(255, 255, 255, 0.8); 
+   border-radius: 10px; 
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+   letter-spacing: 1px; 
+   text-transform: uppercase; 
+}
+
+.maps-title:hover {
+   color: #ffffff; 
+   background: #ff85b0; 
+   cursor: pointer; 
+   transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+
