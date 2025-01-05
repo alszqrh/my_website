@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Playlist  | @nurinalis </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .video-list {
+           border-radius: 5px;
+           height: 900px;
+           overflow-y: scroll;
+           background-image: url(images/mac\ wallpaper.jpg);
+           margin: 30px 10px;
+           padding: 20px 15px;
+           display: flex;
+           flex-direction: column;
+           box-shadow: 0.5px 10px;
+           transition: 0.3s ease-in-out;
+           width: 60%;
+        }
+        
+        /* Video item styles */
+        .video-list .vid {
+           display: flex;
+           align-items: center;
+           gap: 15px;
+           background: #f4f1fa; 
+           border-radius: 5px;
+           margin: 10px;
+           padding: 10px;
+           border: 1px solid rgba(0, 0, 0, 0.1);
+           cursor: pointer;
+        }
+        
+        /* Video dimensions */
+        .video-list .vid video {
+           max-width: 100%;
+           border-radius: 10px;
+        }
+        
+        /* Title styling */
+        .video-list .vid .title {
+           color: #ff85b0; /* Soft pink for title text */
+           font-size: 17px;
+           text-align: center;
+           font-weight: bold;
+           transition: color 0.3s ease;
+        }
+        
+        /* Hover Effect for Video Item */
+        .video-list .vid:hover {
+           background: #ffebf2; 
+        }
+        
+        /* Hover Effect on Video Title */
+        .video-list .vid:hover .title {
+           color: #8a5e9b;
+        }
+        
+        /* Webkit Scrollbar Customization */
+        .video-list::-webkit-scrollbar {
+           width: 8px;
+        }
+        
+        .video-list::-webkit-scrollbar-track {
+           background: #f4f1fa; 
+           border-radius: 10px;
+        }
+        
+        .video-list::-webkit-scrollbar-thumb {
+           background: #ff85b0;
+           border-radius: 10px;
+           transition: background-color 0.3s ease;
+        }
+        
+        /* Hover Effect for Scrollbar Thumb */
+        .video-list::-webkit-scrollbar-thumb:hover {
+           background: #8a5e9b; /* Soft purple when hovered */
+        }
+        
+        /* Media Queries */
+        @media (max-width: 768px) {
+           .video-list {
+              padding: 5px 5%;
+           }
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="heading">ALIS'S SONG PLAYLIST</div>
+
+        <!-- Playlist Section -->
+        <div class="video-list">
+            <div class="vid">
+                <video width="150" height="84" controls>
+                    <source src="video/Adele - Million Years Ago (Song Lyric).mp4" type="video/mp4">
+                </video>
+                <div class="title">Adele - Million Years Ago</div>
+            </div>
+
+            <div class="vid">
+                <video width="150" height="84" controls>
+                    <source src="video/Ariana Grande - Tattooed Heart (Live from London).mp4" type="video/mp4">
+                </video>
+                <div class="title">Ariana Grande - Tattooed Heart</div>
+            </div>
+
+            <div class="vid">
+                <video width="150" height="84" controls>
+                    <source src="video/Beanie (Slowed).mp4" type="video/mp4">
+                </video>
+                <div class="title">Beanie (Slowed)</div>
+            </div>
+
+            <div class="vid">
+                <video width="150" height="84" controls>
+                    <source src="video/cinnamon girl  lana del rey.mp4" type="video/mp4">
+                </video>
+                <div class="title">Cinnamon Girl - Lana Del Rey</div>
+            </div>
+
+            <div class="vid">
+                <video width="150" height="84" controls>
+                    <source src="video/d4vd - Here With Me (Official Audio).mp4" type="video/mp4">
+                </video>
+                <div class="title">d4vd - Here With Me</div>
+            </div>
+
+            <div class="vid">
+                <video width="150" height="84"controls>
+                    <source src="video/Deep Blue Sea (Deep Blue Sea).mp4" type="video/mp4">
+                </video>
+                <div class="title">Deep Blue Sea</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
