@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps | @nurinalis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+        
+        .heading {
+            font-family: 'Poppins', sans-serif; 
+            font-size: 2rem; 
+            font-weight: bold; 
+            color: #ff85b0; 
+            text-align: center; 
+            margin: 40px 0;
+            padding: 406px; 
+            background: rgba(255, 255, 255, 0.8); 
+            border-radius: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            letter-spacing: 1px; 
+            text-transform: uppercase; 
+            width: 100%;
+        } 
+
+        .heading:hover {
+            color: #ffffff;
+            background: #ff85b0; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;  
+            font-size: 1.8rem;  
+            font-weight: bold;   
+            color: black;      
+            margin: 30px 0;     
+        }
+        body {
+            background: linear-gradient(45deg, pink, teal);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0;           
+            background-color: #fff; 
+            border-radius: 8px;   
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+            margin-top: 20px; /* Added margin to separate list from the content above */
+        }
+
+        li {
+            margin: 15px 0;       
+            padding: 10px;    
+            padding-left: 40px; /* Space for the custom marker */
+            position: relative; /* Positioning context for the custom marker */
+            background-color: #f9f9f9; 
+            transition: background-color 0.3s; 
+        }
+
+        li::before {
+            content: "@"; /* Custom marker */
+            position: absolute; /* Position absolutely */
+            left: 10px;  /* Spacing from the left */
+            top: 50%; /* Vertically center */
+            transform: translateY(-50%); /* Adjust vertical alignment */
+            font-size: 20px; /* Marker size */
+            color: #853295; /* Color of the custom marker */
+        }
+
+        li:hover {
+            background-color: #e9ecef; 
+        }
+
+        strong {
+            color: #853295; 
+        }
+    </style>
+</head>
+<body>
+    <h1><a name="top" class="heading" style="text-align: center;">Hidden Gems Restaurant in Malaysia</a></h1>
+    
+    <!-- Image Mapping -->
+    <div class="maps">
+        <img src="images/malaysia-map.jpg" usemap="#malaysia-map" style="display: block; margin: 0 auto;">
+    </div>
+
+    <!-- Image Map -->
+    <map name="malaysia-map">
+        <area target="_blank" alt="Kedah" title="Kedah" href="https://g.co/kgs/7vy2Wb9" coords="308,250,57" shape="circle">
+        <area target="_blank" alt="Perlis" title="Perlis" href="https://g.co/kgs/3icma4i" coords="211,178,59" shape="circle">
+        <area target="_blank" alt="Pulau Pinang" title="Pulau Pinang" href="https://g.co/kgs/gmmHxv7" coords="255,338,41" shape="circle">
+        <area target="_blank" alt="Perak" title="Perak" href="https://g.co/kgs/3C8iABD" coords="321,320,395,528" shape="rect">
+        <area target="_blank" alt="Kelantan" title="Kelantan" href="https://g.co/kgs/WiuqeKf" coords="480,360,53" shape="circle">
+        <area target="_blank" alt="Terengganu" title="Terengganu" href="https://g.co/kgs/89tX7DG" coords="555,294,638,432" shape="rect">
+        <area target="_blank" alt="Pahang" title="Pahang" href="https://g.co/kgs/gfwh9PF" coords="557,558,84" shape="circle">
+        <area target="_blank" alt="Hulu Selangor, Selangor" title="Hulu Selangor, Selangor" href="https://g.co/kgs/YV2sz86" coords="388,604,52" shape="circle">
+        <area target="_blank" alt="Putrajaya" title="Putrajaya" href="https://g.co/kgs/xR1ReTV" coords="425,678,25" shape="circle">
+        <area target="_blank" alt="Negeri Sembilan" title="Negeri Sembilan" href="https://g.co/kgs/76xPuC9" coords="486,673,37" shape="circle">
+        <area target="_blank" alt="Melaka" title="Melaka" href="https://g.co/kgs/1UKeLBA" coords="475,714,521,746" shape="poly">
+        <area target="_blank" alt="Johor Bharu" title="Johor Bharu" href="https://g.co/kgs/QjaDLrA" coords="584,719,735,843" shape="rect">
+        <area target="_blank" alt="Sarawak" title="Sarawak" href="https://g.co/kgs/pVhC4YC" coords="971,599,1392,355" shape="rect">
+        <area target="_blank" alt="Sabah" title="Sabah" href="https://g.co/kgs/nbX6KFj" coords="1423,320,1642,172" shape="rect">
+    </map>
+
+    <!-- List Food -->
+     <br>
+     <br>
+    <h2>List of Best Food in Each States</h2>
+    <ul>
+        <li><strong>Kedah:</strong> Known for its traditional Malay cuisine like Nasi Kandar, a flavorful rice dish with various curries.</li>
+        <li><strong>Perlis:</strong> Offers delicious seafood dishes due to its coastal location, such as grilled fish and prawn noodles.</li>
+        <li><strong>Pulau Pinang:</strong> Famous for its street food scene, especially dishes like Char Kway Teow (stir-fried noodles) and Penang Laksa.</li>
+        <li><strong>Perak:</strong> Enjoy local favorites like Ipoh Hor Fun (flat rice noodles) and Chicken Rice, which are must-try dishes.</li>
+        <li><strong>Kelantan:</strong> Explore traditional Kelantanese cuisine with specialties like Nasi Kerabu (blue rice) and Ayam Percik (grilled chicken in spicy coconut sauce).</li>
+        <li><strong>Terengganu:</strong> Savour fresh seafood dishes like Nasi Dagang (rice cooked in coconut milk) and Keropok Lekor (fish crackers).</li>
+        <li><strong>Pahang:</strong> Indulge in local delights such as Patin Tempoyak (catfish in fermented durian paste) and Ikan Bakar (grilled fish).</li>
+        <li><strong>Hulu Selangor, Selangor:</strong> Try local favorites like Asam Pedas (sour and spicy fish stew) and Satay, a popular Malaysian skewered meat dish.</li>
+    </ul>
+
+</body>
+</html>
